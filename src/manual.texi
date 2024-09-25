@@ -1,0 +1,158 @@
+@setfilename manual.info
+@settitle SmartCalc v2.0 Manual
+@setchapternewpage odd
+
+@ifinfo
+This is the SmartCalc v2.0 Manual. For more information, visit our website.
+@end ifinfo
+
+@node Top, Introduction, , Top
+@top
+
+@titlepage
+@title SmartCalc v2.0 Manual
+@subtitle User Guide
+
+@author Androw Bayard
+@page
+@vskip 0pt plus 1filll
+Copyright © 2023 Your Organization
+@end titlepage
+
+@contents
+
+@node Introduction, Installation, Top
+@chapter Introduction
+
+The SmartCalc v2.0 is a versatile calculator program developed in C++17.
+It provides various features, including arithmetic calculations, expression evaluation,
+and function plotting.
+
+@menu
+* Installation::        Installing SmartCalc v2.0
+* Usage::               How to use SmartCalc
+@end menu
+
+@node Installation, Usage, Introduction
+@chapter Installation
+
+To install SmartCalc v2.0, follow these steps:
+
+@enumerate
+@item Download the source code from our website.
+
+@item Navigate to the `src` folder.
+
+@item Build the program using the provided Makefile. Run the following command:
+
+@example
+make all
+@end example
+
+@item Install the program using the following command:
+
+@example
+make install
+@end example
+
+@end enumerate
+
+@node Usage, Basic Calculations, Introduction
+@chapter Usage
+
+SmartCalc v2.0 offers a user-friendly interface for mathematical calculations.
+
+@menu
+* Basic Calculations::   Performing basic arithmetic calculations
+* Expression Evaluation:: Evaluating complex expressions
+* Function Plotting::    Plotting mathematical functions
+* Supported Features::   List of supported features
+@end menu
+
+@node Basic Calculations, Expression Evaluation, Usage
+@section Basic Calculations
+
+To perform basic arithmetic calculations, follow these steps:
+
+@enumerate
+@item Launch SmartCalc v2.0.
+
+@item Enter a mathematical expression.
+
+@item Press the "=" symbol to calculate the result.
+
+@end enumerate
+
+@node Expression Evaluation, Function Plotting, Basic Calculations
+@section Expression Evaluation
+
+SmartCalc v2.0 supports evaluating complex arithmetic expressions with various operators and functions. It also allows substitution of variables.
+
+@subsection Supported Operators and Functions
+
+SmartCalc v2.0 supports the following operators and functions:
+
+@table @asis
+@item Brackets
+@item Addition
+@item Subtraction
+@item Multiplication
+@item Division
+@item Power
+@item Modulus
+@item Unary plus
+@item Unary minus
+@item Computes cosine	cos(x)
+@item sine	sin(x)
+@item tangent	tan(x)
+@item arc cosine	acos(x)
+@item arc sine	asin(x)
+@item arc tangent	atan(x)
+@item square root	sqrt(x)
+@item natural logarithm	ln(x)
+@item common logarithm	log(x)
+
+@end table
+
+@node Function Plotting, Supported Features, Expression Evaluation
+@section Function Plotting
+
+SmartCalc v2.0 allows you to plot graphs of mathematical functions. To plot a function, follow these steps:
+
+@enumerate
+@item Enter the expression in infix notation with the variable @code{x}.
+
+@item Specify the domain and codomain for the function.
+
+@item Press the "Plot" button to generate the graph.
+
+@end enumerate
+
+Please note that the domain and codomain of a function are limited to at least numbers from -1,000,000 to 1,000,000.
+
+@node Supported Features, Top, Function Plotting
+@section Supported Features
+
+SmartCalc v2.0 offers the following features:
+
+@itemize
+@item Arithmetic calculations
+@item Expression evaluation
+@item Function plotting
+@item Support for integers and real numbers
+@item Support for exponential notation
+@item Verifiable accuracy to 7 decimal places
+@item Input of up to 255 characters
+@item Support for a wide range of operators and mathematical functions
+@item Implementation in C++17 following Google style
+@item Unit tests using GTest
+@item Cross-platform GUI implementation (Linux and Mac)
+@item MVC pattern with separation of concerns
+@end itemize
+
+@node Information, , Usage, Top
+@chapter Information
+
+For more detailed information about SmartCalc v2.0 and its usage, please refer to the task manual.
+
+@bye
